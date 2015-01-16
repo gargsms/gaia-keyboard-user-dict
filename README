@@ -1,0 +1,10 @@
+There are a few files that are helpful in the User Dictionary implementation for Gaia Keyboard in Firefox OS.
+
+The basic TST script is taken from https://github.com/jandre/js-ternary-tree/blob/master/ternary-tree.js
+Various modifications have been made for our purposes.
+
+You can use node.js for running the TSTPerfTest.js file and check for the performance of the current implementation.
+
+On my 2.5GHz, Quad-Core processor and 4Gigs of RAM, the TST generation times are about 50 - 60 ms for 5000 words. The search times were within 10ms.
+The performance measures are not very nice. The generation time will suffer quite a lot when using completely randomised set of inputs. The present inputs are only pseudo-random.
+But, for an average user the User Dictionary will hardly exceed 500 - 600 words (maybe that is a hyperbole), so we can safely assume that everything is fine.
